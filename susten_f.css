@@ -1,0 +1,94 @@
+/*estilizando o header*/
+body{
+margin: 0;
+}
+ul{
+    list-style: none;
+    padding: 0;
+    overflow: hidden;
+    transition: all .5s;
+}
+nav{
+    background-color: rgb(195, 238, 167);
+    padding:  0 20px;
+    justify-content: space-between;   
+    align-items: center; 
+}
+nav,ul{
+    display: flex;
+    flex-direction: row;
+}
+li{
+    padding: 0 20px;
+}
+button{
+    background-color: transparent;
+    border: none;
+    font-size: 35px;
+     color: rgb(20, 85, 4);
+     position: absolute;
+     right: 10px;
+     display: none;
+}
+li:hover,h1:hover,button:hover {
+    cursor: pointer;
+    opacity: 0.8;
+}
+h1 {
+    color: rgb(20, 85, 4);
+}
+button:focus ~ ul {
+    height: 260px;
+}
+@media(max-width:850px) {
+    nav,ul{
+        flex-direction: column;
+        align-items: center;
+        padding-top: 20px;
+    }
+    ul{
+        text-align: center;
+        margin: 0;
+        height: 0;
+    }
+    h1{
+        margin: 10px;
+    }
+    button {
+        display: flex;
+    }
+    li,ul{
+        width: 100%;
+    }
+}
+a{
+    color: rgb(20, 85, 4);
+    text-decoration: none;
+    
+}
+ul{
+    gap: 45px;
+}
+h2{
+    color: rgb(23, 207, 146);
+}
+/*final do header*/
+main{
+    padding: 4%;
+}
+
+
+/*footer*/
+footer{ 
+    background-color: rgb(195, 238, 167);
+    text-align: center;
+    padding: 30px;
+}
+.p-footer{
+    color: rgb(20, 85, 4);
+}
+.p-footer:hover{ 
+    cursor: pointer;
+    opacity: 0.8;
+
+}
